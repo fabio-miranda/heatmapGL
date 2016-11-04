@@ -1,0 +1,103 @@
+html, body {
+  font: 14px Verdana;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  background: black;
+  color: rgba(255, 255, 255, 0.85);
+  width: 100%;
+  height: 100%;
+  text-align:justify;
+  text-justify:inter-word;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+
+div {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Top panel component: canvas container and its content. */
+
+#page_container {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#canvas_container {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#map_container, #map_overlay, #map_overlay svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#map_overlay {
+  z-index: 10;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+#map_overlay svg {
+  font: 20px sans-serif;
+  stroke: white;
+  fill: white;
+}
+
+#menu_container {
+  width: 350px;
+  height: 230px;
+  background-color: #404040;
+  border: 2px solid;
+  border-radius: 10px;
+  border-color: gray;
+  margin: 0;
+  padding: 3px;
+  font: 12px Verdana;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* Top panel component: color scale. */
+#color_scale {
+  width: 30px;
+  height: 220px;
+  padding: 3px;
+}
+
+/* Side panel component: animation control container. */
+#anim_container {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  padding: 3px;
+}
+
+/* Side panel component: filters. */
+#filters_container {
+  width: 300px;
+  height: 180px;
+  padding: 3px;
+}
+
+/* Animation control container components: animation buttons. */
+#play_button, #fw_button, #rw_button {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-size: 20px 20px;
+  cursor: hand;
+  cursor: pointer;
+}

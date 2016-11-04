@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>World countries boundaries inc South Sudan</name>
+		<Style id='Style57-point-1'>
+			<IconStyle>
+				<color>ff0000ff</color>
+				<scale>1.0</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.0</scale>
+			</LabelStyle>
+			<BalloonStyle>
+				<text>$[description]</text>
+			</BalloonStyle>
+		</Style>
+		<Style id='Style57-point-1-hover'>
+			<IconStyle>
+				<color>ff0000ff</color>
+				<scale>1.0</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+				</Icon>
+			</IconStyle>
+			<BalloonStyle>
+				<text>$[description]</text>
+			</BalloonStyle>
+		</Style>
+		<StyleMap id='Style57-point-1-map'>
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#Style57-point-1</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#Style57-point-1-hover</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Style id='Style57-line-2'>
+			<LabelStyle>
+				<scale>0.0</scale>
+			</LabelStyle>
+			<LineStyle>
+				<color>7f0000ff</color>
+				<width>2</width>
+			</LineStyle>
+			<BalloonStyle>
+				<text>$[description]</text>
+			</BalloonStyle>
+		</Style>
+		<Style id='Style57-line-2-hover'>
+			<LineStyle>
+				<color>7f0000ff</color>
+				<width>2</width>
+			</LineStyle>
+			<BalloonStyle>
+				<text>$[description]</text>
+			</BalloonStyle>
+		</Style>
+		<StyleMap id='Style57-line-2-map'>
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#Style57-line-2</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#Style57-line-2-hover</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Style id='Style57-polygon-3'>
+			<LabelStyle>
+				<scale>0.0</scale>
+			</LabelStyle>
+			<LineStyle>
+				<color>ffffffff</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>cccccccc</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<text>$[description]</text>
+			</BalloonStyle>
+		</Style>
+		<Style id='Style57-polygon-3-hover'>
+			<LineStyle>
+				<color>ffffffff</color>
+				<width>1</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>cccccccc</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<text>$[description]</text>
+			</BalloonStyle>
+		</Style>
+		<StyleMap id='Style57-polygon-3-map'>
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#Style57-polygon-3</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#Style57-polygon-3-hover</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Placemark>
+			<name>Gambia</name>
+			<snippet></snippet>
+			<description><![CDATA[<div class="googft-info-window">
+<b>geometry:</b> -16.8415246241,13.1513939478,0 -16.713728807,13.5949586044,0 -15.62459632,13.6235873479,0 -15.3987703109,13.8603687606,0 -15.0817353988,13.8764918075,0 -14.687030809,13.6303569605,0 -14.3767138331,13.6256802434,0 -14.0469923568,13.794067898,0 -13.8449633448,13.5050416122,0 -14.2777017888,13.2805850285,0 -14.7121972315,13.2982066919,0 -15.1411632959,13.5095116236,0 -15.5118125066,13.2785696477,0 -15.6910005355,13.2703530949,0 -15.9312959457,13.1302841252,0 -16.8415246241,13.1513939478,0<br>
+<b>name:</b> Gambia<br>
+<b>iso_a3:</b> GMB<br>
+<b>geometry_vertex_count:</b> 16<br>
+<b>ScaleRank:</b> 1<br>
+<b>LabelRank:</b> 1<br>
+<b>FeatureCla:</b> Admin-0 countries<br>
+<b>SOVEREIGNT:</b> Gambia<br>
+<b>SOV_A3:</b> GMB<br>
+<b>ADM0_DIF:</b> 
+</div>]]></description>
+			<styleUrl>#Style57-polygon-3-map</styleUrl>
+			<ExtendedData>
+				<Data name='iso_a3'>
+					<value>GMB</value>
+				</Data>
+				<Data name='geometry_vertex_count'>
+					<value>16</value>
+				</Data>
+				<Data name='ScaleRank'>
+					<value>1</value>
+				</Data>
+				<Data name='LabelRank'>
+					<value>1</value>
+				</Data>
+				<Data name='FeatureCla'>
+					<value>Admin-0 countries</value>
+				</Data>
+				<Data name='SOVEREIGNT'>
+					<value>Gambia</value>
+				</Data>
+				<Data name='SOV_A3'>
+					<value>GMB</value>
+				</Data>
+				<Data name='ADM0_DIF'>
+					<value></value>
+				</Data>
+				<Data name='LEVEL'>
+					<value>2.000000</value>
+				</Data>
+				<Data name='TYPE'>
+					<value>Sovereign country</value>
+				</Data>
+				<Data name='ADMIN'>
+					<value>Gambia</value>
+				</Data>
+				<Data name='ADM0_A3'>
+					<value>GMB</value>
+				</Data>
+				<Data name='GEOU_DIF'>
+					<value></value>
+				</Data>
+				<Data name='GEOUNIT'>
+					<value>Gambia</value>
+				</Data>
+				<Data name='GU_A3'>
+					<value>GMB</value>
+				</Data>
+				<Data name='SU_DIF'>
+					<value></value>
+				</Data>
+				<Data name='SUBUNIT'>
+					<value>Gambia</value>
+				</Data>
+				<Data name='SU_A3'>
+					<value>GMB</value>
+				</Data>
+				<Data name='ABBREV'>
+					<value>Gambia</value>
+				</Data>
+				<Data name='POSTAL'>
+					<value>GM</value>
+				</Data>
+				<Data name='NAME_FORMA'>
+					<value>Republic of the Gambia</value>
+				</Data>
+				<Data name='TERR_'>
+					<value></value>
+				</Data>
+				<Data name='NAME_SORT'>
+					<value>Gambia</value>
+				</Data>
+				<Data name='MAP_COLOR'>
+					<value>8.000000</value>
+				</Data>
+				<Data name='POP_EST'>
+					<value>1782893.000000</value>
+				</Data>
+				<Data name='GDP_MD_EST'>
+					<value>2272.000000</value>
+				</Data>
+				<Data name='FIPS_10_'>
+					<value></value>
+				</Data>
+				<Data name='ISO_A2'>
+					<value>GM</value>
+				</Data>
+				<Data name='ISO_N3'>
+					<value>270.000000</value>
+				</Data>
+				<Data name='FeatureCla_ft_style'>
+					<value>0</value>
+				</Data>
+				<Data name='TYPE_ft_style'>
+					<value>0</value>
+				</Data>
+				<Data name='TERR__ft_style'>
+					<value></value>
+				</Data>
+				<Data name='import_notes'>
+					<value></value>
+				</Data>
+			</ExtendedData><Polygon><outerBoundaryIs><LinearRing><coordinates>-16.841525,13.151394,0.0 -16.713729,13.594959,0.0 -15.624596,13.623587,0.0 -15.39877,13.860369,0.0 -15.081735,13.876492,0.0 -14.687031,13.630357,0.0 -14.376714,13.62568,0.0 -14.046992,13.794068,0.0 -13.844963,13.505042,0.0 -14.277702,13.280585,0.0 -14.712197,13.298207,0.0 -15.141163,13.509512,0.0 -15.511813,13.27857,0.0 -15.691001,13.270353,0.0 -15.931296,13.130284,0.0 -16.841525,13.151394,0.0</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>
+	</Document>
+</kml>

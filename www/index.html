@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<html>
+  <head>
+    <title>Adaptive Heatmaps</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.css" media="all">
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/libs/geoxml3.js"></script>
+    <script type="text/javascript" src="js/libs/gl-matrix-min.js"></script>
+    <script type="text/javascript" src="js/libs/d3.v3.min.js"></script>
+    <script type="text/javascript" src="js/libs/colorbrewer.js"></script>
+    <script type="text/javascript" src="js/libs/crossfilter.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/libs/CanvasLayer.js"></script>
+
+    <script type="text/javascript" src="js/colorscale.js"></script>
+    <script type="text/javascript" src="js/scatter.js"></script>
+    <script type="text/javascript" src="js/scattergl.js"></script>
+    <script type="text/javascript" src="js/glutil.js"></script>
+	  <script type="text/javascript" src="js/utils.js"></script>
+  </head>
+  <body>
+
+  	<div id="page_container">
+
+  		<!-- Map -->
+      <div id="canvas_container">
+        <canvas id='scatterplotmatrix'></canvas>
+        <div id="map_container" style="background-color: rgb(255, 255, 255)"></div>
+        <div id="map_overlay"></div>
+      </div>
+
+    </div>
+
+		<div id="menu_container" >
+
+      <table>
+        <tr>
+          <td rowspan="2">
+            <canvas id='color_scale'></canvas>
+          </td>
+          <td>
+            <div id="anim_container">
+              <div id='div_animslider'></div>
+              <svg id="rw_button"></svg>
+              <svg id="play_button"></svg>
+              <svg id="fw_button"></svg>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id="filters_container">
+              Maximum accuracy:<input id='accuracy' onchange='changeAccuracy(this.value, true)'></input></br>
+              Band:<input id='bandwidth' onchange='changeBandwidth(this.value, true)'></input></br>
+              <!--<div id='div_bandwidthslider'></div>-->
+
+
+              <select id='colorType' onchange='changeColorScale()'>
+                <option value='color_discrete'>Discrete colors</option>
+                <option value='color_linear' selected='selected'>Linear colors</option>
+              </select>
+              <input type="checkbox" id='reverse' onchange='changeColorScale()'>Reverse</input>
+              <input type="checkbox" id='normalize' checked='on' onchange='setNormalize()'>Normalize</input>
+              </br>
+
+              <div id='div_colorbrewer'></div>
+
+              <div id='div_dataclasses'></div>
+              <select id='alphaType' onchange='changeTransparency()'>
+                <option value='alpha_fixed'>Fixed alpha</option>
+                <option value='alpha_linear' selected='selected'>Linear alpha</option>
+                <option value='alpha_discrete'>Discrete alpha</option>
+              </select>
+              <input type="checkbox" id='contour' checked='on' onchange='setContour()'>Contour</input>
+              <div id='div_alphaslider'></div> 
+
+
+              <select id='windowsize' onchange='changeWindowSize()'>
+                <option>2</option>
+                <option>4</option>
+                <option>8</option>
+                <option selected='selected'>16</option>
+                <option>32</option>
+                <option>64</option>
+                <option>128</option>
+                <option>256</option>
+                <option>512</option>
+                <option>1024</option>
+                <option>2048</option>
+              </select>
+
+              <select id='kdetype' onchange='changeRenderType(this.value)'>
+                <option value='singlekde' selected='selected'>SingleKDE</option>
+                <option value='singleakde'>SingleAKDE</option>
+                <option value='kde'>KDE</option>
+                <option value='akde'>AKDE</option>
+                <option value='discrete'>Discrete</option>
+              </select>
+
+              <!--
+              <center>
+                <center>Contour width: <div id='div_contourwidthslider'></div></center>
+              </center>
+            </div>
+            -->
+          </td>
+        </tr>
+      </table>
+
+    </div>
+  </body>
+</html>
