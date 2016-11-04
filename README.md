@@ -27,3 +27,5 @@ where:
 	python server.py
 
 3) Open http://localhost:8080/?datapath=/[name], where [name] should be replaced by the folder name created in step 1
+
+![ScreenShot](https://raw.githubusercontent.com/fabio-miranda/simplescatter/master/example.png)
