@@ -1,5 +1,5 @@
 # HeatmapGL
-Simple heatmap using WebGL
+Simple heatmap visualization using WebGL, with support for spatiotemporal point data.
 
 # Steps to use:
 1. Place data inside folder "./data/[name]/". This same folder must also contain a file info.txt, similar to:
