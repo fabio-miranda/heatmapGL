@@ -2,7 +2,7 @@
 Simple heatmap using WebGL
 
 # Steps to use:
-1) Place data inside folder "./data/[name]/". This same folder must also contain a file info.txt, similar to:
+1. Place data inside folder "./data/[name]/". This same folder must also contain a file info.txt, similar to:
 
 	numpoints: 542059
 	bucketcount: 24
@@ -23,9 +23,12 @@ where:
 	latmin,latmax,lngmin,lngmax: spatial boud of data
 
 
-2) Run server:
+2. Run server:
 	python server.py
 
-3) Open http://localhost:8080/?datapath=/[name], where [name] should be replaced by the folder name created in step 1
+3. Open http://localhost:8080/?datapath=/[name], where [name] should be replaced by the folder name created in step 1
 
-![ScreenShot](https://raw.githubusercontent.com/fabio-miranda/simplescatter/master/example.png)
+![Heatmap GL](https://vgc.poly.edu/~fmiranda/heatmap/heatmap-teaser.png)
+
+More: https://vgc.poly.edu/~fmiranda/heatmap/
+
